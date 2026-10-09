@@ -64,7 +64,9 @@ let page;
 async function newPage(browser) {
   const ctx = await browser.newContext({
     viewport: { width: 1366, height: 768 },
-    recordVideo: { dir: VIDEO_DIR, size: { width: 1366, height: 768 } },
+    // Record at a smaller size than the viewport: identical layout, lighter file
+    // (keeps the submission video comfortably under GitHub's 10 MB embed limit).
+    recordVideo: { dir: VIDEO_DIR, size: { width: 960, height: 540 } },
   });
   const p = await ctx.newPage();
   p.setDefaultTimeout(20_000);
