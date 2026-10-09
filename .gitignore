@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Secrets — never commit real credentials
+.env
+
+# Playwright output
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

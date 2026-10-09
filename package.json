@@ -1,0 +1,29 @@
+{
+  "name": "automation-testing-dmoney",
+  "version": "1.0.0",
+  "description": "Playwright end-to-end automation of the DMoney portal agent lifecycle (Road to Career assignment, Batch 19).",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "regression": "playwright test --headed",
+    "smoke": "playwright test --headed --grep @smoke",
+    "test:headless": "playwright test",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "qa",
+    "dmoney",
+    "end-to-end"
+  ],
+  "author": "ART61264",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "dotenv": "^18.0.6"
+  },
+  "dependencies": {
+    "imapflow": "^2.3.0"
+  }
+}
